@@ -1,0 +1,9 @@
+.movieDesciption {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.arrow {
+    background-color: black;
+    border-radius: 5px;
+}

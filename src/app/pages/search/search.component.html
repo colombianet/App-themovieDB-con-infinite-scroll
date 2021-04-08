@@ -1,0 +1,5 @@
+<div class="container mt-3">
+    <h2>Resultados para: <small>{{ busqueda }}</small></h2>
+    <app-loading *ngIf="loading"></app-loading>
+    <app-peliculas-poster-grid *ngIf="movies.length > 0" [movies]="movies" class="mt-2"></app-peliculas-poster-grid>
+</div>

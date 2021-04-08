@@ -1,0 +1,22 @@
+.poster {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pointer:hover {
+    transition: all 0.3s;
+    opacity: .8;
+}
+
+.text {
+    font-size: 14px;
+}

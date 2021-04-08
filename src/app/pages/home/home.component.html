@@ -1,0 +1,14 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <app-loading *ngIf="moviesCarousel.length === 0"></app-loading>
+            <app-carousel *ngIf="moviesCarousel.length > 0" [movies]="moviesCarousel"></app-carousel>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <h2>Películas</h2>
+    <app-loading *ngIf="moviesCarousel.length === 0"></app-loading>
+    <app-peliculas-poster-grid *ngIf="moviesCarousel.length > 0" [movies]="moviesGrid"></app-peliculas-poster-grid>
+</div>

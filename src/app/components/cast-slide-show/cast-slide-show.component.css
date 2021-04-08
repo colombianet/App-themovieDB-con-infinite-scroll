@@ -1,0 +1,19 @@
+.containerSlide {
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    color: black !important;
+    font-size: 12px;
+}
+
+.text-center {
+    flex: none;
+}
+
+@media (max-width: 768px) {
+    h3 {
+        display: none;
+    }
+}

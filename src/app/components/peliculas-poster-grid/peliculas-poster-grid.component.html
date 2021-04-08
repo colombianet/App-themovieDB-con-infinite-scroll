@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-sm-4 col-md-3 mb-5 pointer" *ngFor="let movie of movies">
+        <img [routerLink]="['/movie', movie.id]" [src]="movie.poster_path | poster" alt="movie.title" class="img-fluid poster">
+        <div class="row">
+            <div class="col">
+                <star-rating [value]="movie.vote_average" totalstars="10" checkedcolor="yellow" uncheckedcolor="gray" size="12px" readonly="false"></star-rating>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text text-muted">
+                <p>Califiación {{ movie.vote_average | number:'1.1-2'}}</p>
+            </div>
+        </div>
+    </div>
+</div>
